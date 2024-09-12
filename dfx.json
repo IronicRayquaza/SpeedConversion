@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hello24_backend": {
+      "main": "src/hello24_backend/main.mo",
+      "type": "motoko"
+    },
+    "hello24_frontend": {
+      "dependencies": [
+        "hello24_backend"
+      ],
+      "source": [
+        "src/hello24_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello24_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
